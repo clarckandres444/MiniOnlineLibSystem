@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f5f3;
+  color: #3e3e3e;
+}
+
+.App {
+  text-align: center;
+}
+
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #7aa378;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #a67c52;
+}
+
+h2 {
+  text-align: center;
+  color: #3e3e3e;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 30px 0;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+  width: 350px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: 90%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+  outline: none;
+  border-color: #7aa378;
+  box-shadow: 0 0 5px rgba(122,163,120,0.5);
+}
+
+button {
+  width: 95%;
+  max-width: 300px;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7aa378;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #a67c52;
+}
+
+.book-list, ul {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  list-style: none;
+}
+
+.book-list li {
+  background-color: #fffdf8;
+  border-left: 4px solid #7aa378;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-list li:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease;
+}
+
+.book-title {
+  font-weight: 600;
+  color: #3e3e3e;
+}
+
+.book-author {
+  font-style: italic;
+  color: #a67c52;
+}
+
+table {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #e7f0ea;
+  color: #3e3e3e;
+}
+
+td {
+  color: #5c5c5c;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  color: #7aa378;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  table, .book-list, ul {
+    width: 95%;
+  }
+}
